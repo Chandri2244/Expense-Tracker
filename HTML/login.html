@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/style02.css">
+    
+</head>
+<body>
+    
+
+    <div class="container">
+        <div id="Login-Form" class="form">
+            <h2 style="text-align: center;">Login</h2>
+            <input type="text" id="email" placeholder="  Enter Email" rquired>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <p>
+                <!-- <input type="checkbox" /><span>Remember me</span> -->
+                <span class="forgot"><a href="forgot_psw.html">Forgot Password</a></span>
+            </p> 
+    <br>   
+    <button onclick="checkLogin()">Login</button>
+    <p id="message"></p>
+    <p style="text-align: center; color: black">
+        <span>Not a member? </span><a class="link" href="signup.html">Sign Up</a>
+    </p>
+
+
+        </div>
+    </div>
+    
+    <script src="../JS/script02.js"></script>
+    
+</body>
+</html>
