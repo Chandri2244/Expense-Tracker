@@ -21,7 +21,7 @@ A **user-friendly Expense Tracker** application built using **HTML, CSS, and Jav
 
 ## 🚀 Live Demo
 
-👉 [Insert link here if hosted on GitHub Pages or similar]
+👉 [https://chandri2244.github.io/Expense-Tracker/]
 
 ---
 
