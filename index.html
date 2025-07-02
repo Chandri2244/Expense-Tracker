@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseTracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="assets/logo3.png" alt="Logo" class="logo">
+            <span class="title">Expense Tracker</span>
+        </div>
+        <div class="navbar-right">
+            <a href="#home">Home</a> 
+            <a href="html/aboutus.html">About Us</a>
+            <a href="html/signup.html">Register</a>  
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <img src="assets/userpic.png" alt="" class="user-icon"> 
+                </button>
+                
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <p style="text-align: center; font-style: bold ; font-size: 20px; font-weight: 700;"> 
+        <!-- <h1>Welcome, Chandrika Kore</h1> -->
+         Hello! We track your expenses accurately..
+    </p> 
+    <br>
+    <div class="pic">
+    <img src="assets/picture.png" alt="">
+    </div>
+    <br>
+    <div class="summary"> 
+		<div> 
+            <h2 style="color: #007bff;">Check your balance sheet</h2>
+			<h1> Balance: 
+				<span id="updatedBal"> 
+                    7000 
+				</span> 
+			</h1> 
+		</div> 
+		<br /> 
+		<div class="total"> 
+			<div> 
+				Total Income: 
+				<div> 
+					<h2 style="color: green;"
+						id="updatedInc"> 
+						25000 
+					</h2> 
+				</div> 
+			</div> 
+			<hr class="verticle" /> 
+			<div> 
+				Total Expenses: 
+				<div> 
+					<h2 style="color: red;"
+						id="updatedExp"> 
+						18000  
+					</h2> 
+				</div> 
+			</div> 
+		</div> 
+	</div> 
+	<div class="root"> 
+		<div id="items"> 
+			<h2>Expenses</h2> 
+			<table id="table"> 
+				<tr class="titles"> 
+					<th>S.no.</th> 
+					<th>Name</th> 
+					<th>Amount</th> 
+					<th>Type</th> 
+                    <th>Date</th>
+                    <th>Delete</th> 
+				</tr> 
+			</table> 
+		</div> 
+		<hr class="vertical" /> 
+		<div id="new"> 
+			<h2>Add new</h2> 
+
+			<div class="inputs"> 
+				<div class="inputitem"> 
+					<p style="width: 9rem"> 
+						Entry type: 
+					</p> 
+					<select id='itemType'> 
+						<option value="0">Expense</option> 
+						<option value="1">Income</option> 
+					</select> 
+				</div> 
+				<div class="inputitem"> 
+					<p style="width: 9rem">Name:</p> 
+					<input id="name"
+						type="text"
+						value=""
+						placeholder="name" /> 
+				</div> 
+				<div class="inputitem"> 
+					<p style="width: 9rem">Amount:</p> 
+					<input value="0"
+						id="amount"
+						name="mod"
+						type="number"
+						placeholder="amount" /> 
+				</div> 
+                <div class="inputitem">
+                    <p style="width: 9rem">Date: </p>
+                    <input type="date" id="date" required>
+                </div>
+			</div> 
+			<button  id="button" onclick="addItem()">Add Expense</button> 
+		</div> 
+	</div> 
+	<script src="js/script03.js"></script> 
+
+
+
+
+
+    
+</body>
+</html>
